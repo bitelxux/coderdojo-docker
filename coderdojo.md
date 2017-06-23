@@ -46,3 +46,11 @@ https://en.wikipedia.org/wiki/Operating-system-level_virtualization
 
   Yes ! Windows Server 2016 and Windows 10 can run docker containers.
 I haven't tested it though. I have a kind of alergy to Windows.
+
+## Slides
+
+https://docs.google.com/presentation/d/1QsZYMy4-5tSuC-YsiBcEHXlUcGSy4GjyAI029_B0sto/edit?usp=sharing
+
+## GIT
+
+https://github.com/bitelxux/coderdojo-docker
