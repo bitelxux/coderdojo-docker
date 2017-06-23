@@ -1,38 +1,130 @@
-# CoderDojo Malahide. Docker Presentation
+# CoderDojo Malahide. Docker Demo
 
 Carlos Novo June 2017
 
-##  Demo1: Apache on Ubuntu and DockerHub
+##  Demo1: Apache on Ubuntu and push it to DockerHub
 
-  - [ ] docker run -it -p80:80 --name coderdojo ubuntu:16.04 bash
-  - [ ] apt-get update
-  - [ ] apt-get install apache2
-  - [ ] service apache2 start
-  - [ ] check browser
-  - [ ] Ctrl+p+q
-  - [ ] docker ps
-  - [ ] create a repo in dockerhub
-  - [ ] docker commit coderdojo
-  - [ ] docker commit coderdojo bitelxux/coderdojo
-  - [ ] docker rm -f coderdojo
-    - [ ] apache is gone !
-  - [ ] docker run -it -p80:80 --name coderdojo bitelxux/coderdojo bash
-    - [ ] start apache
-    - [ ] apache is back !
-  - [ ] docker login
-  - [ ] docker push bitelxux/coderdojo
-  - [ ] docker rm -f coderdojo
-    - [ ] apache is gone again :-(
-  - [ ] docker rmi bitelxux/coderdojo
-  - [ ] docker run -it -p80:80 --name coderdojo bitelxux/coderdojo bash
-    - [ ] start apache
-    - [ ] apache is back
+  - [ ] Run a container based on ubuntu
+
+  ```
+  docker run -it -p80:80 --name coderdojo ubuntu:16.04 bash
+  ```
+
+  - [ ] update packages list
+
+  ```
+  apt-get update
+  ```
+  - [ ] Install apache
+
+  ```
+  apt-get install -y apache2
+  ```
+
+  - [ ] Start apache
+
+  ```
+  service apache2 start
+  ```
+  - [ ] check your browser
+  - [ ] Exit the container without stopping it
+
+  ```
+  Ctrl+p+q
+  ```
+
+  - [ ] Check the container is still running
+
+  ```
+  docker ps
+  ```
+
+  - [ ] create a repo in DockerHub
+  - [ ] Commit the changes locally
+
+  ```
+  docker commit coderdojo
+  ```
+
+  - [ ] Prepare the container to be pushed to dockerHub
+
+  ```
+  docker commit coderdojo bitelxux/coderdojo
+  ```
+
+  - [ ] Delete the container
+
+  ```
+  docker rm -f coderdojo
+  ```
+
+  - [ ] apache is gone ( check your browser )!
+  - [ ] Run again the container using the local image
+
+  ```
+  docker run -it -p80:80 --name coderdojo bitelxux/coderdojo bash
+  ```
+
+  - [ ] start apache
+
+  ```
+  service apache2 start
+  ```
+
+  - [ ] apache is back ( check your browser )!
+  - [ ] Login into DockerHub
+
+  ```
+  docker login
+  ```
+
+  - [ ] Push the image to DockerHub
+
+  ```
+  docker push bitelxux/coderdojo
+  ```
+
+  - [ ] Delete the container
+
+  ```
+  docker rm -f coderdojo
+  ```
+
+  - [ ] apache is gone again :-( ( Check your browser )
+  - [ ] Delete the local image
+
+  ```
+  docker rmi bitelxux/coderdojo
+  ```
+
+  - [ ] Run again the container. This time the image will be pulled from DockerHub
+
+  ```
+  docker run -it -p80:80 --name coderdojo bitelxux/coderdojo bash
+  ```
+
+  - [ ] start apache
+
+  ```
+  service apache2 start
+  ```
+    - [ ] apache is back ( check your browser )
 
 
 ## Demo2: Creating an image from scratch
 
-  - [ ] docker build -t=coderdojo .
-  - [ ] docker run -itd -p80:80 --name coderdojo bitelxux/coderdojo
+  - [ ] cd to apache2 directory
+  - [ ] Create the image based on Dockerfile file
+
+  ```
+  docker build -t=coderdojo-image .
+  ```
+
+  - [ ] Run a container based on that image
+
+  ```
+  docker run -itd -p80:80 --name coderdojo coderdojo-image
+  ```
 
 ## Some reference
 
