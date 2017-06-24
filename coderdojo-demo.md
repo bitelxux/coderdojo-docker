@@ -26,7 +26,7 @@ Carlos Novo June 2017
   ```
   service apache2 start
   ```
-  - [ ] check your browser
+  - [ ] check your browser at http://localhost
   - [ ] Exit the container without stopping it
 
   ```
@@ -58,7 +58,7 @@ Carlos Novo June 2017
   sudo docker rm -f coderdojo
   ```
 
-  - [ ] apache is gone ( check your browser )!
+  - [ ] apache is gone ( check your browser at http://localhost )!
   - [ ] Run again the container using the local image
 
   ```
@@ -71,7 +71,7 @@ Carlos Novo June 2017
   service apache2 start
   ```
 
-  - [ ] apache is back ( check your browser )!
+  - [ ] apache is back ( check your browser at http://localhost )!
 
   ( If you don't have an account at hub.docker.com it's time to create one ! )
 
@@ -112,7 +112,7 @@ Carlos Novo June 2017
   service apache2 start
   ```
 
-  - [ ] apache is back ( check your browser )
+  - [ ] apache is back ( check your browser at http://localhost )
 
 
 ## Demo2: Creating an image from scratch
