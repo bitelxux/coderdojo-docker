@@ -111,7 +111,8 @@ Carlos Novo June 2017
   ```
   service apache2 start
   ```
-    - [ ] apache is back ( check your browser )
+
+  - [ ] apache is back ( check your browser )
 
 
 ## Demo2: Creating an image from scratch
