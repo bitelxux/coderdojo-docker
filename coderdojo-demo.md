@@ -53,7 +53,7 @@ to the answer.
   sudo docker ps
   ```
 
-  - [ ] If you don't have an account at hub.docker.com , it's time to create one ! 
+  - [ ] If you don't have an account at https://hub.docker.com , it's time to create one ! 
   - [ ] Commit the changes locally
 
   ```
