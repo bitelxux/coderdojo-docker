@@ -49,7 +49,7 @@ Carlos Novo June 2017
   - [ ] Prepare the container to be pushed to dockerHub
 
   ```
-  sudo docker commit coderdojo bitelxux/coderdojo
+  sudo docker commit coderdojo <your dockerhub user>/coderdojo
   ```
 
   - [ ] Delete the container
@@ -62,7 +62,7 @@ Carlos Novo June 2017
   - [ ] Run again the container using the local image
 
   ```
-  sudo docker run -it -p80:80 --name coderdojo bitelxux/coderdojo bash
+  sudo docker run -it -p80:80 --name coderdojo <your dockerhub user>/coderdojo bash
   ```
 
   - [ ] start apache
@@ -84,7 +84,7 @@ Carlos Novo June 2017
   - [ ] Push the image to DockerHub
 
   ```
-  sudo docker push bitelxux/coderdojo
+  sudo docker push <your dockerhub user>/coderdojo
   ```
 
   - [ ] Delete the container
@@ -97,13 +97,13 @@ Carlos Novo June 2017
   - [ ] Delete the local image
 
   ```
-  sudo docker rmi bitelxux/coderdojo
+  sudo docker rmi <your dockerhub user>/coderdojo
   ```
 
   - [ ] Run again the container. This time the image will be pulled from DockerHub
 
   ```
-  sudo docker run -it -p80:80 --name coderdojo bitelxux/coderdojo bash
+  sudo docker run -it -p80:80 --name coderdojo <your dockerhub user>/coderdojo bash
   ```
 
   - [ ] start apache
