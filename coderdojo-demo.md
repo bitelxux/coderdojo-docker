@@ -72,6 +72,9 @@ Carlos Novo June 2017
   ```
 
   - [ ] apache is back ( check your browser )!
+
+  ( If you don't have an account at hub.docker.com it's time to create one ! )
+
   - [ ] Login into DockerHub
 
   ```
