@@ -1,9 +1,6 @@
 FROM centos:latest
 MAINTAINER bitelxux@gmail.com
 
-# Tell debconf to run in non-interactive mode
-ENV DEBIAN_FRONTEND noninteractive
-
 RUN yum update -y
 RUN yum install -y httpd
 
