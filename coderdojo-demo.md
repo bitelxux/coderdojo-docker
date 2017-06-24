@@ -6,7 +6,7 @@ Carlos Novo June 2017
 
 You want to install Docker on your machine ...
 
-In Debian based distributions is something like
+In Debian based distributions it is something like
 
 ```
 sudo apt-get install docker.io
