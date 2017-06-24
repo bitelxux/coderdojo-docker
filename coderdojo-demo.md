@@ -53,7 +53,7 @@ to the answer.
   sudo docker ps
   ```
 
-  - [ ] create a repo in DockerHub
+  - [ ] If you don't have an account at hub.docker.com , it's time to create one ! 
   - [ ] Commit the changes locally
 
   ```
@@ -86,9 +86,6 @@ to the answer.
   ```
 
   - [ ] apache is back ( check your browser at http://localhost )!
-
-  ( If you don't have an account at hub.docker.com it's time to create one ! )
-
   - [ ] Login into DockerHub
 
   ```
