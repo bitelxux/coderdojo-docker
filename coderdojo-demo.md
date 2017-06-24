@@ -13,7 +13,7 @@ sudo apt-get install docker.io
 ```
 
 How to install it will vary depending on the OS you are running on your host.
-A quick google search "how to install docker on <whatevertheosimrunningis" will lead you
+A quick google search "how to install docker on <whatevertheosimrunningis> will lead you
 to the answer.
 
 ##  Demo1: Apache on Ubuntu and push it to DockerHub
